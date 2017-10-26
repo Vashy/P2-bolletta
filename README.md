@@ -1,0 +1,2 @@
+classe Bolletta discussa nelle prime settimane di lezione a Programmazione ad Oggetti. 
+Compila e non dovrebbero esserci bug, ma non ho controllato ogni singola funzione in casi particolari, quindi tutto è possibile.
