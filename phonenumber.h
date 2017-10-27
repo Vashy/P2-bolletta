@@ -5,12 +5,14 @@
 
 class PhoneNumber {
 private:
+    std::string prefix;
     std::string number;
-    std::string naz;
 public:
-    PhoneNumber(std::string = "0444000000", std::string = "it");
+    PhoneNumber(std::string, std::string); //2 parametri: prefisso e resto del numero
+    PhoneNumber(std::string = "0444-000000"); //0 e 1 parametro: numero per intero
+    std::string getFullNumber() const;  //restituisce prefisso + numero
+    std::string getPrefix() const;
     std::string getNumber() const;
-    std::string getNationality() const;
 
     bool operator ==(const PhoneNumber&) const;
     bool operator !=(const PhoneNumber&) const;
